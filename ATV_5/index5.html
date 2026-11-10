@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Alunos</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pesquisa de Alunos</h1>
+
+        <label>Pesquisar pelo nome</label>
+        <input type="text" id="nome" placeholder="Digite o nome">
+
+        <label>Filtrar por curso</label>
+        <select id="curso">
+            <option value="">Todos os cursos</option>
+        </select>
+
+        <button onclick="pesquisar()">Pesquisar</button>
+        <button onclick="limpar()">Limpar pesquisa</button>
+
+        <h3 id="quantidade">Resultados encontrados: 0</h3>
+
+        <div id="lista"></div>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+</html>
