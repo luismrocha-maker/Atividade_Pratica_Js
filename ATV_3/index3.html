@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Compras</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simulador de Compras</h1>
+
+        <label>Nome do produto</label>
+        <input type="text" id="produto" placeholder="Digite o produto">
+
+        <label>Valor unitário</label>
+        <input type="number" id="valor" placeholder="Ex: 50">
+
+        <label>Quantidade</label>
+        <input type="number" id="quantidade" placeholder="Ex: 2">
+
+        <label>Desconto (%)</label>
+        <input type="number" id="desconto" placeholder="Ex: 10">
+
+        <button onclick="calcularDesconto()">Calcular compra</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
