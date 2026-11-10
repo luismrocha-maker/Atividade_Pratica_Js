@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Escolar</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dashboard Escolar</h1>
+
+        <h2>Cadastrar estudante</h2>
+
+        <label>Nome</label>
+        <input type="text" id="nome" placeholder="Nome do aluno">
+
+        <label>Turma</label>
+        <input type="text" id="turma" placeholder="Ex: 2A">
+
+        <label>Primeira nota</label>
+        <input type="number" id="nota1" placeholder="Nota de 0 a 10">
+
+        <label>Segunda nota</label>
+        <input type="number" id="nota2" placeholder="Nota de 0 a 10">
+
+        <label>Terceira nota</label>
+        <input type="number" id="nota3" placeholder="Nota de 0 a 10">
+
+        <label>Total de aulas</label>
+        <input type="number" id="aulas" placeholder="Ex: 100">
+
+        <label>Faltas</label>
+        <input type="number" id="faltas" placeholder="Ex: 10">
+
+        <button onclick="cadastrar()">Cadastrar estudante</button>
+
+        <hr>
+
+        <h2>Indicadores</h2>
+
+        <label>Filtrar por turma</label>
+        <select id="filtro" onchange="mostrar()">
+            <option value="">Todas as turmas</option>
+        </select>
+
+        <div id="indicadores"></div>
+
+        <h2>Gráfico de desempenho</h2>
+
+        <div id="grafico"></div>
+
+        <h2>Alunos cadastrados</h2>
+
+        <div id="lista"></div>
+    </div>
+
+    <script src="script9.js"></script>
+</body>
+</html>

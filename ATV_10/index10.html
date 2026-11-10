@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Escolar</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestão Escolar</h1>
+
+        <nav>
+            <a href="#cadastro">Cadastro</a>
+            <a href="#alunos">Alunos</a>
+            <a href="#painel">Indicadores</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <section id="cadastro">
+            <h2>Cadastrar estudante</h2>
+
+            <label>Nome</label>
+            <input type="text" id="nome" placeholder="Nome do aluno">
+
+            <label>Matrícula</label>
+            <input type="text" id="matricula" placeholder="Matrícula">
+
+            <label>Turma</label>
+            <input type="text" id="turma" placeholder="Turma">
+
+            <label>Curso</label>
+            <input type="text" id="curso" placeholder="Curso">
+
+            <label>Primeira nota</label>
+            <input type="number" id="nota1" placeholder="Nota">
+
+            <label>Segunda nota</label>
+            <input type="number" id="nota2" placeholder="Nota">
+
+            <label>Terceira nota</label>
+            <input type="number" id="nota3" placeholder="Nota">
+
+            <button onclick="cadastrar()">Cadastrar aluno</button>
+        </section>
+
+        <hr>
+
+        <section id="alunos">
+            <h2>Estudantes cadastrados</h2>
+
+            <input type="text" id="pesquisa" placeholder="Pesquisar pelo nome"
+                oninput="mostrarAlunos()">
+
+            <select id="filtro" onchange="mostrarAlunos()">
+                <option value="">Todas as turmas</option>
+            </select>
+
+            <div id="lista"></div>
+        </section>
+
+        <hr>
+
+        <section id="painel">
+            <h2>Painel escolar</h2>
+
+            <div id="indicadores"></div>
+
+            <h3>Alertas de frequência</h3>
+
+            <div id="alertas"></div>
+
+            <button onclick="imprimir()">Gerar relatório para impressão</button>
+        </section>
+
+    </div>
+
+    <script src="script10.js"></script>
+</body>
+</html>

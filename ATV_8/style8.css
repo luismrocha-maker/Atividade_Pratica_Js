@@ -1,0 +1,78 @@
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1, h3 {
+    text-align: center;
+    color: #333333;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 70px;
+}
+
+button {
+    padding: 9px;
+    margin-top: 10px;
+    background-color: #5636a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #392274;
+}
+
+.tarefa {
+    background-color: #eeeeee;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+.concluida {
+    background-color: #d5f5d5;
+}
+
+.atrasada {
+    background-color: #ffdada;
+}
+
+#contadores {
+    margin-top: 20px;
+    text-align: center;
+    line-height: 25px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: auto;
+        margin: 15px;
+    }
+}
