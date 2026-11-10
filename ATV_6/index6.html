@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Controle de Estoque</h1>
+
+        <label>Nome do produto</label>
+        <input type="text" id="nome" placeholder="Nome do produto">
+
+        <label>Código</label>
+        <input type="text" id="codigo" placeholder="Código do produto">
+
+        <label>Quantidade</label>
+        <input type="number" id="quantidade" placeholder="Quantidade">
+
+        <label>Preço unitário</label>
+        <input type="number" id="preco" placeholder="Preço">
+
+        <button onclick="cadastrar()">Cadastrar produto</button>
+
+        <p id="mensagem"></p>
+
+        <h2>Produtos cadastrados</h2>
+
+        <div id="lista"></div>
+
+        <h3 id="total">Valor total do estoque: R$ 0,00</h3>
+    </div>
+
+    <script src="script6.js"></script>
+</body>
+</html>

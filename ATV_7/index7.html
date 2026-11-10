@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequência Escolar</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequência Escolar</h1>
+
+        <h2>Cadastrar aluno</h2>
+
+        <label>Nome</label>
+        <input type="text" id="nome" placeholder="Nome do aluno">
+
+        <label>Matrícula</label>
+        <input type="text" id="matricula" placeholder="Matrícula">
+
+        <label>Turma</label>
+        <input type="text" id="turma" placeholder="Turma">
+
+        <label>Curso</label>
+        <input type="text" id="curso" placeholder="Curso">
+
+        <button onclick="cadastrar()">Cadastrar aluno</button>
+
+        <p id="mensagem"></p>
+
+        <hr>
+
+        <h2>Registrar frequência</h2>
+
+        <label>Aluno</label>
+        <select id="aluno">
+            <option value="">Selecione um aluno</option>
+        </select>
+
+        <label>Data</label>
+        <input type="date" id="data">
+
+        <label>Situação</label>
+        <select id="situacao">
+            <option value="Presença">Presença</option>
+            <option value="Falta justificada">Falta justificada</option>
+            <option value="Falta não justificada">Falta não justificada</option>
+        </select>
+
+        <button onclick="registrar()">Registrar frequência</button>
+
+        <hr>
+
+        <h2>Alertas pedagógicos</h2>
+
+        <div id="alertas"></div>
+
+        <hr>
+
+        <h2>Histórico de frequência</h2>
+
+        <div id="historico"></div>
+
+    </div>
+
+    <script src="script7.js"></script>
+</body>
+</html>
